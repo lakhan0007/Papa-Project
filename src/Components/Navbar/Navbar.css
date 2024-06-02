@@ -91,12 +91,16 @@ font-family: "Poetsen One", sans-serif;}
 }
 
 .banner-div-first {
-    padding:70px 0px 0px 70px;
+    padding:70px 0px 0px 40px;
     margin-top:100px;
 }
 .secondd-p {
     color: white;
     font-size: 30px;
+}
+.third-p{
+    font-size: 30px;
+
 }
 
 .banner-div-second img {

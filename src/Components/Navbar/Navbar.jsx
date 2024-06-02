@@ -65,7 +65,7 @@ function BootNav() {
       <div className="container-fluid">
         <div className="row banner_div">
           <div className="col-md-6 flex-row banner-div-first ">
-            <p className="first-p">Hiii There !</p>
+            <p className="first-p">Hiii There !👋🏻</p>
             <p className="secondd-p">
               I'M <span style={{ color: "yellow" }}>LAKHAN SINGH RATHORE</span>
             </p>
@@ -84,7 +84,7 @@ function BootNav() {
                 }}
               />
             </p>
-            <button class="button button2">Contect Me</button>
+            {/* <button class="button button2">Contect Me</button> */}
           </div>
           <div className="col-md-6 banner-div-second">
             <img src={PapaImg} alt="" />
