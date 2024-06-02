@@ -8,9 +8,9 @@ const Login = () => {
 
   const [show, setShow] = useState(false);
   const [saveData, setSaveData] = useState({
-    userName: "lakhan0007",
-    email: "lakhan0007@gmail.com",
-    password: "0007",
+    userName: "",
+    email: "",
+    password: "",
   });
 
   function getData(data, value) {

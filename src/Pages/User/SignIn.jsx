@@ -7,8 +7,8 @@ const SignIn = () => {
   const users = JSON.parse(localStorage.getItem("user"));
 
   const [saveData, setSaveData] = useState({
-    userName: "lakhan0007",
-    password: "0007",
+    userName: "",
+    password: "",
   });
 
 

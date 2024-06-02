@@ -5,17 +5,22 @@ body{
 font-family: "Poetsen One", sans-serif;}
 
 .banner_div{
-    background: url("http://www.webcoderskull.com/img/right-sider-banner.png") no-repeat center top / cover;
-
+    background: url("https://images.unsplash.com/photo-1636955860106-9eb89e576026?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center top / cover;
+ 
 }
 
+.navnav{
+    position: fixed;
+    z-index: 11;
+    width: 100vw;
+}
 .banner-div-first{
     padding: 100px;
-    margin-top: 70px;
+    margin-top: 100px;
 }
 .first-p{
     color: white;
-    font-size: 1.25rem;
+    font-size: 35px;
 }
 .secondd-p{
     color: white;
@@ -24,12 +29,12 @@ font-family: "Poetsen One", sans-serif;}
     font-weight: 500;
 }
 .third-p{
-    margin-top: 10px;
-    opacity: 0.7;
-    color: #fff;
+    margin-top: 20px;
+    color: #e67700;
+    font-size: 40px;
 }
 .banner-div-second{
-    margin-top: 40px;
+    margin-top: 70px;
     padding: 80px;
     text-align: center;
 }
@@ -80,17 +85,14 @@ font-family: "Poetsen One", sans-serif;}
 
 
 @media only screen and (max-width: 768.99px) {
-.banner_div{
-    flex-direction: column-reverse;
-}
+
 .banner-div-second {
     padding: 20px !important;
-        /* margin-top: 50px; */
 }
 
 .banner-div-first {
-    padding: 20px;
-    margin-top:10px;
+    padding:70px 0px 0px 70px;
+    margin-top:100px;
 }
 .secondd-p {
     color: white;
