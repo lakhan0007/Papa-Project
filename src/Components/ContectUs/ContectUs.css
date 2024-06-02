@@ -1,0 +1,57 @@
+
+
+.contect_head {
+    margin: 0;
+    color: #5959FF;
+    font-size: 2.5em;
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 50;
+}
+
+.contect_form {
+    width: 60%;
+}
+
+.contect_label {
+    font-size: 1.2rem;
+}
+
+.contect_input, .contect_text_area {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.contect_input, .contect_text_area {
+    margin: 0 0 1em;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.contect_text_area {
+    height: 6em;
+}
+
+.btn{
+    height: 50px;
+    border: 1px solid #e67700;
+    width: 100%;
+    cursor: pointer;
+    font-size: 23px;
+    color: #e67700;
+    
+}
+
+.btn:hover {
+    background: #e67700;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768.99px) {
+    .contect_form {
+        width: 90%;
+    }
+    
+}

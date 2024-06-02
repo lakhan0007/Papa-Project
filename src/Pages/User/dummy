@@ -1,0 +1,209 @@
+import React, { useState } from "react";
+import "./SignIn.css";
+import { NavLink } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
+const Login = () => {
+
+ const navigate = useNavigate()
+  
+  const [show, setShow]= useState(false)
+  const [formData, setFormData] = useState({
+    userName: '',
+    email: '',
+    password: '',
+  })
+
+  function onLoad(e) {
+    e.preventDefault()
+    e.preventDefault()
+  }
+  
+  function onSubmithandler(e) {
+    e.preventDefault()
+    localStorage.setItem('userName', formData.userName);
+    localStorage.setItem('Email', formData.email);
+    localStorage.setItem('password', formData.password);
+    alert('heslifaedjkgfvj')
+    navigate('/')
+}
+
+  function getData(getData, value) {
+    setFormData((prev) => {
+      return {...prev, [getData]: value}
+    })
+}
+
+
+
+
+  return (
+    <>
+      <div className="loginform">
+        <form class="login" onSubmit={onSubmithandler}>
+          <h2>Welcome, User!</h2>
+          <p>Please Sign Up</p>
+          <input
+            type="Name"
+            placeholder="User Name"
+            onChange={(e) => getData("userName", e.target.value)}
+          />
+          <input
+            type="gmail"
+            placeholder="Gmail"
+            onChange={(e) => getData("email", e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e) => getData("password", e.target.value)}
+          />
+          {show && (
+            <>
+              <p>{formData.userName}</p>
+              <p>{formData.email}</p>
+              <p>{formData.password}</p>
+            </>
+          )}
+          <input type="submit" value="Sign Up" onClick={() => setShow(true)} />
+
+          <div class="links">
+            <p style={{ fontSize: "13px" }}>
+              Already have an account so please ?
+            </p>
+            <NavLink href="/">Sign In</NavLink>
+          </div>
+        </form>
+      </div>
+    </>
+  );
+};
+
+export default Login;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useState } from "react";
+import "./SignIn.css";
+import { NavLink, useNavigate } from "react-router-dom";
+
+const SignIn = () => {
+
+    const navigate = useNavigate()
+    const [show, setShow] = useState(false);
+    const [fill, setFill] = useState({
+        name: "",
+        password: "",
+    });
+
+
+    const userName = localStorage.getItem('userName')
+    const password = localStorage.getItem('password')
+    const email = localStorage.getItem('Email')
+
+    function getData(setFnc, value) {
+        setFill((prev) => {
+            console.log(prev);
+            return { ...prev, [setFnc]: value };
+        });
+    }
+
+    function check(e) {
+        e.preventDefault();
+        if ((fill.name === userName || fill.name === email) && fill.password === password) {
+            alert("congrats");
+            navigate("/home");
+        } else {
+            alert("chlaja bsdke");
+        }
+    }
+
+    return (
+        <>
+            <div className="loginform">
+                <form class="login" onSubmit={check}>
+                    <h2>Welcome, User!</h2>
+                    <p>Please Sign In</p>
+                    <input
+                        type="text"
+                        placeholder="User Name"
+                        value={fill.name}
+                        onChange={(e) => getData("name", e.target.value)}
+                    />
+                    <input
+                        type="password"
+                        value={fill.password}
+                        placeholder="Password"
+                        onChange={(e) => getData("password", e.target.value)}
+                    />
+                    {show && (
+                        <>
+                            <p>{fill.name}</p>
+                            <p>{fill.password}</p>
+                        </>
+                    )}
+                    {/* <NavLink to="/home"> */}
+                    <input
+                        type="submit"
+                        value="Sign In"
+                        onClick={() => setShow(true)}
+                    />
+                    {/* </NavLink> */}
+
+                    <div class="links">
+                        <a href="#">Forgot password</a>
+                        <NavLink to="/signUp">Register</NavLink>
+                    </div>
+                </form>
+            </div>
+        </>
+    );
+};
+
+export default SignIn;
+
