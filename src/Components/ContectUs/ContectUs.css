@@ -15,6 +15,10 @@
 
 .contect_label {
     font-size: 1.2rem;
+    color: white;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    word-break: break-all;
 }
 
 .contect_input, .contect_text_area {
