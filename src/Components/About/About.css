@@ -1,18 +1,49 @@
 
 .About-con{
-    margin-top: 100px;
+    margin-top: 90px;
     width: 85%;
+}
+
+.about-myself{
+    text-align: center;
+    color: white;
+}
+.myself-p1{
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.myself-p2, .myself-p3{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+        word-spacing: 5px;
+        word-break: break-all;
+}
+
+
+.myself-span{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 6
+    00;
+    color: rgb(199, 112, 240);
+
 }
 
 .about-h1{
     text-align: center;
     color: white;
+    margin-top: 50px;
 }
-
-.span-1{
+.about-span-1{
     color: rgb(199, 112, 240);
-    letter-spacing: 1.5px;
-    word-spacing: 2px;
+    
+}
+.span-2{
+    color: rgb(199, 112, 240);
+    font-size: 20px;
 }
 
 
@@ -20,11 +51,15 @@
     color: white;
     font-size: 22px;
     margin-top: 50px;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    word-break: break-all;
 }
 
 .about-img img{
     height: 50vh;
     width: 40vw;
+    margin-top: 150px;
 }
 .about-img{
     text-align: center;
@@ -32,7 +67,8 @@
 
 @media only screen and (max-width: 768.99px) {
     .about-img img {
-            height: 50vh;
+        margin-top: 10px;
+        height: 50vh;
             width: 85vw;
         }
 }
