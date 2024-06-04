@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poetsen+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 body{
     overflow-x: hidden;
-font-family: "Poetsen One", sans-serif;}
+margin: 0;
+    font-family: "Raleway", serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+}
 
 .banner_div{
     background: url("https://images.unsplash.com/photo-1636955860106-9eb89e576026?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center top / cover;
@@ -16,7 +21,7 @@ font-family: "Poetsen One", sans-serif;}
 }
 .banner-div-first{
     padding: 100px;
-    margin-top: 100px;
+    margin-top: 170px;
 }
 .first-p{
     color: white;
@@ -26,12 +31,13 @@ font-family: "Poetsen One", sans-serif;}
     color: white;
     font-size: 35px;
     line-height: 45px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .third-p{
     margin-top: 20px;
     color: #e67700;
     font-size: 40px;
+    font-weight: 500;
 }
 .banner-div-second{
     margin-top: 70px;
@@ -96,7 +102,7 @@ font-family: "Poetsen One", sans-serif;}
 }
 .secondd-p {
     color: white;
-    font-size: 30px;
+    font-size: 45px;
 }
 .third-p{
     font-size: 30px;

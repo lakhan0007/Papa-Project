@@ -8,7 +8,7 @@ function NewCard(props) {
     <>
       {props?.CardData?.map((value) => {
         return (
-          <Card style={{ width: "250px" }} className="mx-3 my-5">
+          <Card style={{ width: "330px" }} className="mx-3 my-5">
             <Card.Img
               variant="top"
               src={value?.image}
@@ -23,7 +23,7 @@ function NewCard(props) {
         );
       })}
 
-      <Card style={{ width: "250px" }} className="mx-3 my-5">
+      <Card style={{ width: "330px" }} className="mx-3 my-5">
         <Card.Img variant="top" src={props?.image} style={{ height: "200px" }} />
         <Card.Body>
           <Card.Title className="text-center">{props?.title}</Card.Title>

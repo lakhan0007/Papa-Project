@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import "./Navbar.css";
 import PapaImg from "../../../public/images/WhatsApp.jpg";
-// import PapaImg1 from "../../../public/images/WhatsApp-removebg-preview.png";
+import PapaImg1 from "../../../public/images/WhatsApp-removebg-preview.png";
 import { NavLink } from "react-router-dom";
 // import Typewriter from "typewriter-effect/dist/core";
 import Typewriter from "typewriter-effect";
@@ -49,8 +49,8 @@ function BootNav() {
             <NavLink to="/ourteam" className="text-white px-3">
               OurTeam
             </NavLink>
-            <NavLink to="/blog" className="text-white px-3">
-              Blog
+            <NavLink to="/project" className="text-white px-3">
+              Projects
             </NavLink>
             <NavLink to="/contectUs" className="text-white px-3">
               Contect Us

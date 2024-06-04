@@ -1,0 +1,38 @@
+
+.About-con{
+    margin-top: 100px;
+    width: 85%;
+}
+
+.about-h1{
+    text-align: center;
+    color: white;
+}
+
+.span-1{
+    color: rgb(199, 112, 240);
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+
+
+.about-fitst-p{
+    color: white;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.about-img img{
+    height: 50vh;
+    width: 40vw;
+}
+.about-img{
+    text-align: center;
+}
+
+@media only screen and (max-width: 768.99px) {
+    .about-img img {
+            height: 50vh;
+            width: 85vw;
+        }
+}

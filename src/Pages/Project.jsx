@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import Card from "../Components/Cards/NewCard";
 
-function Blog() {
+function Project() {
 
 
   const data = [
@@ -107,7 +107,7 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Project;
 
 
 
