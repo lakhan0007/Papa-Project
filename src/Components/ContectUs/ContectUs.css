@@ -96,12 +96,15 @@ font-size: 22px;
     }
         .contect-find {
             margin-top: 0px !important;
+            margin-left: 20px;
         }
         .contect-call {
             margin-bottom: 50px !important;
+            margin-left: 20px;
         }
         .contect-email {
             margin-bottom: 50px !important;
+            margin-left: 20px;
         }
         
                 .form-design {
