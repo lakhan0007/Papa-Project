@@ -32,8 +32,10 @@ ul {
 }
 
 .cta-text span {
-    color: #757575;
-    font-size: 15px;
+font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(199, 112, 240);
 }
 
 .footer-content {

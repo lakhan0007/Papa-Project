@@ -1,18 +1,48 @@
 
 
-.contect_head {
-    margin: 0;
-    color: #5959FF;
-    font-size: 2.5em;
-    margin-top: 5rem;
-    text-align: center;
-    margin-bottom: 50;
+.contect-find{
+margin-top: 100px !important;
+cursor: pointer;
+}
+.contect-call{
+margin-top: 50px;
+cursor: pointer;
+}
+.contect-find{
+margin-top: 100px;
+cursor: pointer;
+}
+.contect-span{
+font-size: 22px;
+    font-style: italic;
+    font-weight: 6 00;
+    color: rgb(199, 112, 240);
 }
 
-.contect_form {
-    width: 60%;
+
+.form-design{
+    background: #0d0713;
+    padding: 30px 50px;
+    border-radius: 20px;
 }
 
+.contect-head{
+    background: linear-gradient(to right,
+        #8750f7 0,
+        #fff 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 30px;
+        font-weight: bold;
+   
+}
+.contect-para{
+        color: rgba(255, 255, 255, 0.76);
+        margin-top: -20px;
+        font-weight: bold;
+   
+}
 .contect_label {
     font-size: 1.2rem;
     color: white;
@@ -26,16 +56,23 @@
     padding: 0.5em;
     border: none;
     font-size: 1.2rem;
+    background: #2a2a2a13;
+    color: white;
+    border: 1px solid #5959ff5b;
+    border-radius: 5px;
+    margin: 0 0 1em;
+    outline: none;
 }
 
-.contect_input, .contect_text_area {
-    margin: 0 0 1em;
-    border: 1px solid #ccc;
-    outline: none;
+.contect_input:focus {
+    border: 1px solid rgb(199, 112, 240);
 }
 
 .contect_text_area {
     height: 6em;
+}
+.contect_text_area:focus {
+    border: 1px solid rgb(199, 112, 240);
 }
 
 .btn{
@@ -57,5 +94,18 @@
     .contect_form {
         width: 90%;
     }
+        .contect-find {
+            margin-top: 0px !important;
+        }
+        .contect-call {
+            margin-bottom: 50px !important;
+        }
+        .contect-email {
+            margin-bottom: 50px !important;
+        }
+        
+                .form-design {
+                    padding: 30px 10px;
+                }
     
 }
