@@ -4,7 +4,11 @@
 margin-top: 100px !important;
 cursor: pointer;
 }
-.contect-call{
+.contect-call {
+margin-top: 50px;
+cursor: pointer;
+}
+.contect-email{
 margin-top: 50px;
 cursor: pointer;
 }

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./SignIn.css";
-import { NavLink } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -34,12 +33,15 @@ const Login = () => {
         password: saveData.password,
       },
     ];
-    console.log(usersData, newUserEntry);
+    console.log(usersData, newUserEntry, "sdjfhsdfjk");
     localStorage.setItem("user", JSON.stringify(newUserEntry));
-    let matchData = usersData.filter(
-      (value) =>
-        value.userName === saveData.userName && value.email === saveData.email
-    );
+    let matchData = []
+    if (usersData) {
+      matchData = usersData?.filter(
+        (value) =>
+          value.userName === saveData.userName && value.email === saveData.email
+      );
+    }
     if (matchData.length > 0) {
       alert('User name or email all ready exist.')
     } else {
@@ -59,20 +61,23 @@ const Login = () => {
             placeholder="User Name"
             value={saveData.userName}
             onChange={(e) => getData("userName", e.target.value)}
-          />
+            required
+            />
          
           <input
             type="gmail"
             placeholder="Gmail"
             value={saveData.email}
             onChange={(e) => getData("email", e.target.value)}
-          />
+            required
+            />
         
           <input
             type="password"
             placeholder="Password"
             value={saveData.password}
             onChange={(e) => getData("password", e.target.value)}
+            required
           />
           
 
@@ -82,7 +87,7 @@ const Login = () => {
             <p style={{ fontSize: "13px" }}>
               Already have an account so please ?
             </p>
-            <NavLink href="/">Sign In</NavLink>
+            <NavLink to="/">Sign In</NavLink>
           </div>
         </form>
       </div>

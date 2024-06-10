@@ -9,16 +9,21 @@ const SignIn = () => {
   const [saveData, setSaveData] = useState({
     userName: "",
     password: "",
+    email: "",
   });
 
 
   function onSubmitHandler(e) {
     e.preventDefault();
-    let matchedData = users.filter(
-      (value) =>
-        value.userName === saveData.userName &&
-        value.password === saveData.password
-    );
+    let matchedData = []
+    if(users){
+      matchedData = users.filter(
+        (value) =>
+          (value.userName === saveData.userName ||
+            value.email === saveData.email) &&
+          value.password === saveData.password
+      );
+    }
     if (matchedData.length > 0) {
       alert("Are Welcome banna ");
       navigate("/home");
@@ -45,12 +50,14 @@ const SignIn = () => {
             placeholder="User Name"
             value={saveData.userName}
             onChange={(e) => getdata("userName", e.target.value)}
-          />
+            required
+            />
           <input
             type="password"
             value={saveData.password}
             placeholder="Password"
             onChange={(e) => getdata("password", e.target.value)}
+            required
           />
 
           <input type="submit" value="Sign In" />

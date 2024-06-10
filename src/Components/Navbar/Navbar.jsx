@@ -3,12 +3,10 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-// import NavDropdown from "react-bootstrap/NavDropdown";
 import "./Navbar.css";
 import PapaImg from "../../../public/images/WhatsApp.jpg";
 import PapaImg1 from "../../../public/images/WhatsApp-removebg-preview.png";
 import { NavLink } from "react-router-dom";
-// import Typewriter from "typewriter-effect/dist/core";
 import Typewriter from "typewriter-effect";
 
 
